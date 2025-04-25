@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tshird - Tienda de Camisas</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <h1>Tshird</h1>
+    <nav>
+      <a href="#">Inicio</a>
+      <a href="#productos">Tienda</a>
+      <a href="#contacto">Contacto</a>
+    </nav>
+    <div class="carrito">
+      <span id="contador-carrito">0</span>
+      <button id="abrir-carrito">🛒</button>
+    </div>
+  </header>
+
+  <section class="hero">
+    <h2>Estilo que te representa</h2>
+    <p>Camisas únicas, hechas para ti.</p>
+  </section>
+
+  <section id="productos" class="productos">
+    <h3>Nuestros productos</h3>
+    <div class="grid">
+      <div class="producto" data-id="1" data-nombre="Camisa Clásica" data-precio="25.00">
+        <img src="fotos/Captura de pantalla 2025-03-20 231838.png" alt="Camisa Clásica">
+        <h4>Camisa Clásica</h4>
+        <p>$25.00</p>
+        <button class="agregar-carrito">Agregar al carrito</button>
+      </div>
+      <div class="producto" data-id="2" data-nombre="Camisa Urbana" data-precio="30.00">
+        <img src="fotos/Captura de pantalla 2025-03-20 234845.png" alt="Camisa Urbana">
+        <h4>Camisa Urbana</h4>
+        <p>$30.00</p>
+        <button class="agregar-carrito">Agregar al carrito</button>
+      </div>
+      <div class="producto" data-id="3" data-nombre="Camisa Retro" data-precio="28.00">
+        <img src="fotos/Captura de pantalla 2025-03-24 145524.png" alt="Camisa Retro">
+        <h4>Camisa Retro</h4>
+        <p>$28.00</p>
+        <button class="agregar-carrito">Agregar al carrito</button>
+      </div>
+      <div class="producto" data-id="4" data-nombre="Camisa Moderno" data-precio="35.00">
+        <img src="fotos/camisa4.jpg" alt="Camisa Moderno">
+        <h4>Camisa Moderno</h4>
+        <p>$35.00</p>
+        <button class="agregar-carrito">Agregar al carrito</button>
+      </div>
+      <div class="producto" data-id="5" data-nombre="Camisa Básica" data-precio="22.00">
+        <img src="fotos/camisa5.jpg" alt="Camisa Básica">
+        <h4>Camisa Básica</h4>
+        <p>$22.00</p>
+        <button class="agregar-carrito">Agregar al carrito</button>
+      </div>
+    </div>
+  </section>
+
+  <section id="contacto" class="contacto">
+    <h3>Contáctanos</h3>
+    <form action="https://formspree.io/f/tu-id-aqui" method="POST">
+      <input type="text" name="nombre" placeholder="Tu nombre" required>
+      <input type="email" name="email" placeholder="Tu correo electrónico" required>
+      <textarea name="mensaje" rows="5" placeholder="Escribe tu mensaje..." required></textarea>
+      <button type="submit">Enviar</button>
+    </form>
+  </section>
+
+  <!-- Modal del carrito -->
+  <div id="carrito-modal" class="carrito-modal">
+    <div class="carrito-contenido">
+      <h3>Carrito de Compras</h3>
+      <ul id="carrito-lista"></ul>
+      <p id="total-carrito">Total: $0.00</p>
+      <button id="cerrar-carrito">Cerrar</button>
+      <button id="comprar-carrito">Comprar</button>
+    </div>
+  </div>
+
+  <!-- Barra lateral del carrito -->
+  <div id="carrito-barra" class="carrito-barra">
+    <div class="carrito-contenido">
+      <h3>Carrito</h3>
+      <ul id="carrito-lista-barra"></ul>
+      <p id="total-carrito-barra">Total: $0.00</p>
+      <button id="cerrar-barra">Cerrar</button>
+      <button id="comprar-barra">Comprar</button>
+    </div>
+  </div>
+
+  <footer>
+    <div class="footer-logo">
+        <img src="img/clinic.png" alt="Mi Logo" class="footer-logo-img">
+    </div>
+    <div> 
+        <p justify="center"> Ofrecemos atención odontológica con compromiso y profesionalismo. Descubre nuestros planes de ortodoncia, implantes, diseño de sonrisa, rehabilitación oral y mucho más.....</p>
+    </div>
+    <hr>
+    <div class="footer-content">
+        <div class="footer-contact">
+            <h3>Contacto</h3>
+            <p>Dirección: Calle Ejemplo, 123</p>
+            <p>Teléfono: +123 456 7890</p>
+            <p>Email: contacto@ejemplo.com</p>
+        </div>
+        <div class="footer-politic">
+            <h3>Políticas</h3>
+            <a href="politicasaludbridad.html" >Políticas de salubridad <br>
+                <a href="PrivacidadDatos.html" > Politicas de seguridad de datos <br>
+                <a href="PoliticaCalidad.html" >Políticas de calidad </a>
+                <h4> Servicio al Cliente</h4>
+            <a href="PQR.html">Radicar PQR</a>
+        </div>
+        <div class="footer-social">
+            <h3>Síguenos</h3>
+            <a href="https://facebook.com/tu_perfil"><img src="img/facebook.png" alt="Facebook"></a>
+            <a href="https://twitter.com/tu_perfil"><img src="img/twiter.png" alt="Twitter"></a>
+            <a href="https://instagram.com/tu_perfil"><img src="img/ig.png" alt="Instagram"></a>
+            <a href="https://www.youtube.com/"><img src="img/yutu.png" alt="Youtube"></a>
+        </div>
+    </div>
+    <div>
+        <p style="text-align: center;">Dentart 2025- Todos los derechos reservados &copy; Dentart Clínica Odontológica.</p>
+    </div>
+  </footer>
+
+  <script src="carrito.js"></script>
+</body>
+</html>
